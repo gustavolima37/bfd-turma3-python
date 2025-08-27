@@ -45,9 +45,6 @@ while True:
         print(f'Divisão: {numero1} / {numero2} = {matematica.dividir(numero1,numero2)}')
     elif opcao == '4':
         print(f'Multiplicação: {numero1} x {numero2} = {matematica.multiplicar(numero1,numero2)}')
-    else:
-        print('Opção invalida!!')
-        continue
 
     continuar = input('Deseja continuar na calculadora? (S/N) ').upper()
     if continuar != 'S':
