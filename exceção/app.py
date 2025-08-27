@@ -48,6 +48,6 @@ while True:
 
     continuar = input('Deseja continuar na calculadora? (S/N) ').upper()
     if continuar != 'S':
-        print('Encerrando... Até a próxima!')
+        print('Finalizando a Calculadora!')
         break
 
