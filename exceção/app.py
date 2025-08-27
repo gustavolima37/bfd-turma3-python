@@ -1,7 +1,7 @@
 import matematica 
 # Principal
 
-
+#menu
 print('---------- Calculadora BFD ----------')
 print('=' * 30)
 print('1. Somar')
@@ -11,6 +11,7 @@ print('4. Multiplicar')
 print('5. Sair')
 print('=' * 30)
 
+# loop para receber os dados de entrada
 while True:
     
     opcao = input('Digite uma opção acima: ')
@@ -37,6 +38,7 @@ while True:
         except ValueError:
             print('Entrada inválida! Digite apenas números.')
      
+    # condições das escolhas para o processamento e saida.
     if opcao == '1':
         print(f'Adição: {numero1} + {numero2} = {matematica.somar(numero1,numero2)}')
     elif opcao == '2':
@@ -46,6 +48,7 @@ while True:
     elif opcao == '4':
         print(f'Multiplicação: {numero1} x {numero2} = {matematica.multiplicar(numero1,numero2)}')
 
+    # variavel para continuação do codigo ou encerramento do programa.
     continuar = input('Deseja continuar na calculadora? (S/N) ').upper()
     if continuar != 'S':
         print('Finalizando a Calculadora!')
