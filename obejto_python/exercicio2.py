@@ -18,8 +18,8 @@ class Professor(Pessoa):
         self.salario = salario
         
     def apresentar_professor(self):
-        return (f'Olá! Meu nome é {self.nome}, tenho {self.idade} anos '
-                f'e Leciono a disciplina de {self.disciplina}.')
+        return (f'Olá! Sou: {self.nome}, Idade: {self.idade} anos, Professor de: {self.disciplina}')
+                
     
 professor1 = Professor('Andre', 52, 'Programação',5000)
     

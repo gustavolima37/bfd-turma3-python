@@ -17,8 +17,7 @@ class Professor(Pessoa):
         self.__salario = salario #encapsulamento do salario
         
     def apresentar_professor(self):
-        return (f'Olá! Meu nome é {self.nome}, tenho {self.idade} anos '
-                f'e Leciono a disciplina de {self.disciplina}.')
+        return (f'Olá! Sou: {self.nome}, Idade: {self.idade} anos, Professor de: {self.disciplina}')
     
     def get_salario(self):
         return self.__salario
