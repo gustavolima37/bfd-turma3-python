@@ -22,7 +22,7 @@ class Professor(Pessoa):
 
     # Método 'apresentar' com comportamento específico para Professor
     def apresentar(self):
-        return super().apresentar() + f" \nLeciono a disciplina: {self.disciplina}."
+        return super().apresentar() + f" \nProfessor de: {self.disciplina}."
 
 # Criando a classe Estudante
 class Estudante(Pessoa):
