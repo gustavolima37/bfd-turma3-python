@@ -35,6 +35,6 @@ class Professor(Pessoa):
 professor1 = Professor('Andre', 52, 'Programação',5000)
 print(professor1.apresentar_professor())
 #print(professor1.__salario) # vai dar erro.
-print(f'Salário atual: R$ {professor1.get_salario()}')
+#print(f'Salário atual: R$ {professor1.get_salario()}')
 professor1.ajustar_salario(6000)
 print(f'Novo salário: R$ {professor1.get_salario()}')
