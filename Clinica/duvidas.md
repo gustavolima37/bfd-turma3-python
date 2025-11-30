@@ -38,3 +38,5 @@
 
 ## python manage.py createsuperuser
 ## gustavoadm - 741852 (testes)
+
+## pip freeze > requirements.txt (cria esse arquivo requirements.txt com as bibliotecas usadas no projeto)
