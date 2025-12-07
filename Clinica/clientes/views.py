@@ -8,5 +8,5 @@ class ClienteViewSet(viewsets.ModelViewSet):
     queryset = Cliente.objects.all()
     serializer_class = ClienteSerializer  # corrigido
 
-def home(request):
-    return HttpResponse("Bem-vindo à API da Clínica!")
+'''def home(request):
+    return HttpResponse("Bem-vindo à API da Clínica!")'''

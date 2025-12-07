@@ -18,10 +18,11 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 
-from clientes.views import ClienteViewSet, home
+from clientes.views import ClienteViewSet
 from medicos.views import MedicoViewSet
 from pacientes.views import PacienteViewSet
 from consultas.views import ConsultaViewSet
+from .views import home
 
 from consultas import views
 
