@@ -1,0 +1,12 @@
+<h1>Consultas</h1>
+<ul>
+  {% for consulta in consultas %}
+    <li>
+      {{ consulta.paciente }} - {{ consulta.medico }} em {{ consulta.data }}
+      <a href="{% url 'detalhe_consulta' consulta.id %}">Detalhes</a>
+    </li>
+  {% empty %}
+    <li>Nenhuma consulta encontrada.</li>
+  {% endfor %}
+</ul>
+<a href="{% url 'nova_consulta' %}">Agendar nova consulta</a>

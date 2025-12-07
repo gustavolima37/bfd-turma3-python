@@ -21,16 +21,25 @@ from rest_framework.routers import DefaultRouter
 from clientes.views import ClienteViewSet, home
 from medicos.views import MedicoViewSet
 from pacientes.views import PacienteViewSet
+from consultas.views import ConsultaViewSet
+
+from consultas import views
 
 
 router = DefaultRouter()
 router.register(r'clientes', ClienteViewSet)
 router.register(r'medicos', MedicoViewSet)
 router.register(r'pacientes', PacienteViewSet)
+router.register(r'consultas', ConsultaViewSet)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),  # agora a raiz / responde com uma mensagem
+    path('', home, name='home'),  # raiz mostra a home
+    
     path('api/', include(router.urls)),
+    path('consultas/', views.lista_consultas, name='lista_consultas'),
+    path('consultas/nova/', views.nova_consulta, name='nova_consulta'),
+    path('consultas/<int:id>/', views.detalhe_consulta, name='detalhe_consulta'),
 ]
 
